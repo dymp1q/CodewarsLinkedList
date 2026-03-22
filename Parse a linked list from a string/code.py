@@ -1,4 +1,7 @@
-from preloaded import Node
+class Node:
+    def __init__(self, data, next=None): 
+        self.data = data
+        self.next = next
 
 def linked_list_from_string(list_repr: str) -> Node | None:
     str_list = list_repr.split('->')
